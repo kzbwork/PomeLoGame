@@ -1,0 +1,101 @@
+yield ES6关键字 用于停止当前函数的运行，当遇到yeild当前函数停止运行，当下一次NEXT进来时再继续执行当前函数
+例子：
+function* test()
+{
+  yield 1
+  yield 2
+  return 3
+}
+
+test().next(); // {"done": false, "value" : 1}
+test().next(); // {"done": false, "value" : 2}
+test().next(); // {"done": true, "value" : 3}
+
+
+thunk函数具备以下两个要素：
+1.有且只有一个参数是callback的函数；
+2.callback的第一个参数是error。
+
+
+thunkify简化编写thunk函数
+var testfunc = thunkify(fs.readfile);
+
+promise，co将JS异步操作变为同步操作
+co内部实现了promise
+
+
+//抽取游戏后端极端代码注释一下
+
+/**
+ * 给玩家增加游戏币，专用于数值测试
+ * @param uid
+ * @param credit
+ * @param cb
+ */
+pro.addCredit = function (uid, credit, cb) {                                                        //给pro对象新增一个addCredit函数 函数包括 用户ID uid， 金币数量 credit， 回调函数 cd
+  co(function *() {																					//这里调用的co库 完成一个generator方法
+    if ([app.consts.ENVS.DEVELOPMENT, app.consts.ENVS.LOCAL_TEST].indexOf(app.get('env')) < 0) {    //判断当前的运行环境
+      logger.warn(`userRemote addCredit: env = ${app.get('env')}, forbidden`);                      //添加日志
+      cb(null, {code: app.consts.CODE.INVALID});                                                    //回调函数，返回指定属性值 无效环境
+      return;
+    }
+
+    let user = yield app.userService.loadUser(uid);                                                 //这里用到了yeild 当第一次调用此函数时运行到这里退出当前函数 保留上下文 当next()继续运行时则回到这里继续运行
+    if (!user) {																					//判断用户是否存在
+      logger.warn(`userRemote addCredit: uid = ${uid}, user not found`);							//添加日志
+      cb(null, {code: app.consts.CODE.NO_USER});													//回调函数，返回指定属性值 用户不存在
+      return;
+    }
+
+    app.userService.change(user, {																	//改变用户的金币数量
+      credit: user.credit + credit
+    }, app.consts.REASON.TEST_ADD);
+
+    cb(null, {code: app.consts.CODE.SUCCESS});														//返回状态成功
+  }).catch(function (err) {																			//co的catch函数 用来捕获错误
+    cb(err);																						//co的回调函数
+  });
+};
+
+
+
+/**
+ * 请求滚动开奖
+ * @param uid
+ * @param coinValue
+ * @param multiplier
+ * @param cb
+ */
+pro.spin = function (uid, coinValue, multiplier, cb) {                                                     //新增一个滚动开奖函数
+  logger.info(`alibabaRemote spin: uid = ${uid}, coinValue = ${coinValue}, multiplier = ${multiplier}`);   //添加相关日志 这里用到了一个ES6语法 ${}赋值
+  co(function *() {                                                                                        //听力co声明一个generator函数
+    let user = app.userService.getUser(uid);															   //根据用户ID获取当前用户对象
+    if (!user) {																						   //判断对象是否存在
+      logger.warn(`alibabaRemote spin: uid = ${uid}, user not found`);                                     //添加日志
+      cb(null, {code: app.consts.CODE.NOT_IN_GAME});                                                       //返回状态 不在游戏中
+      return undefined;                  
+    }
+
+    let roundId = yield models.getNewId('spinRecord');                                                     //获取roundid 这里也用到了yeild，运行到这里推出，当next时进入继续进入这里执行
+    let result = yield app.alibabaService.spin(user, coinValue, multiplier, roundId);                      //这里调用alibabaservice中的滚动函数 返回结果 这里实现同步等待
+    logger.debug(`alibabaRemote spin: uid = ${uid}, result = ${JSON.stringify(result)}`);                  //书写日志
+    if (result.code === app.consts.CODE.SUCCESS) {                                                         //当状态为成功时
+      result.data.elements = baseUtil.parseMatrix(result.data.elements);                                   //将结果中的data中的elements对象赋值,调用工具类 实现二维矩阵转化为可以协议压缩的结构
+      result.data.lines = baseUtil.parseMatrix(result.data.lines);                                         //同上
+
+      app.userService.change(user, {                                                                       //调用改变函数
+        reconnectTheme: app.consts.THEME_NAME.ALIBABA,
+        reconnectData: result.data
+      });
+    }
+
+    cb(null, result);                                                                                      //回掉函数 返回结果
+  }).catch(function (err) {																				   //co的catch函数
+    logger.error(err.stack);                                                                               //添加日志写入错误栈
+    cb(null, {code: app.consts.CODE.SERVER_ERROR});                                                        //显示服务器错误代码
+  });
+};
+
+https://www.pragmaticplay.com/games/ancient-egypt/?lang=en&cur=usd
+
+

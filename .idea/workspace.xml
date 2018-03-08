@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed184628-6dc5-452d-98f9-ac389578eb90" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-server/app/servers/const/const.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-server/app/servers/game/handler/gameHandler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-server/app/servers/game/remote/gameRemote.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game-server/config/game.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/game-server/app/servers/chat/filter/abuseFilter.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app.js" afterPath="$PROJECT_DIR$/game-server/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js" afterPath="$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app/util/dispatcher.js" afterPath="$PROJECT_DIR$/game-server/app/util/dispatcher.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/app/util/routeUtil.js" afterPath="$PROJECT_DIR$/game-server/app/util/routeUtil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/clientProtos.json" afterPath="$PROJECT_DIR$/game-server/config/clientProtos.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/dictionary.json" afterPath="$PROJECT_DIR$/game-server/config/dictionary.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/adminServer.json" afterPath="$PROJECT_DIR$/game-server/config/adminServer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game-server/config/servers.json" afterPath="$PROJECT_DIR$/game-server/config/servers.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,71 +28,28 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game-server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="133">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clientProtos.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.json">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-server/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="523">
+              <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chatRemote.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/app/servers/chat/remote/chatRemote.js">
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-server/public/js/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chatHandler.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game-server/app/servers/chat/handler/chatHandler.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dictionary.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/config/dictionary.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="servers.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding>
-                <marker date="1520327458631" expanded="true" signature="20:154" ph="{...}" />
-                <marker date="1520327458631" expanded="true" signature="42:154" ph="[...]" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="master.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game-server/config/master.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="235" column="39" lean-forward="true" selection-start-line="235" selection-start-column="39" selection-end-line="235" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -98,28 +58,68 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="91">
               <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="component.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-server/bin/component.sh">
+      <file leaf-file-name="chatHandler.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/servers/chat/handler/chatHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="76">
+              <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gateHandler.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="adminServer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/config/adminServer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gateHandler.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameRemote.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/servers/game/remote/gameRemote.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameHandler.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/app/servers/game/handler/gameHandler.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game-server/config/game.json">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -131,6 +131,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -153,17 +154,31 @@
         <option value="$PROJECT_DIR$/game-server/app/util/dispatcher.js" />
         <option value="$PROJECT_DIR$/game-server/node_modules/pomelo/lib/filters/handler/timeout.js" />
         <option value="$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js" />
-        <option value="$PROJECT_DIR$/game-server/config/servers.json" />
         <option value="$PROJECT_DIR$/game-server/app/servers/chat/filter/abuseFilter.js" />
         <option value="$PROJECT_DIR$/game-server/config/dictionary.json" />
         <option value="$PROJECT_DIR$/game-server/config/clientProtos.json" />
-        <option value="$PROJECT_DIR$/game-server/app.js" />
         <option value="$PROJECT_DIR$/game-server/config/master.json" />
+        <option value="$PROJECT_DIR$/game-server/config/servers.json" />
+        <option value="$PROJECT_DIR$/game-server/config/adminServer.json" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/game/gameRemote.js" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/game/gameHandler.js" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/const/const.js" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/game/handler/gameHandler.js" />
+        <option value="$PROJECT_DIR$/game-server/config/game.json" />
+        <option value="$PROJECT_DIR$/game-server/app/servers/game/remote/gameRemote.js" />
+        <option value="$PROJECT_DIR$/game-server/app.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -173,8 +188,8 @@
     <handled-path value="$PROJECT_DIR$/web-server/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="490" />
-    <option name="y" value="95" />
+    <option name="x" value="1055" />
+    <option name="y" value="211" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -193,86 +208,50 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="game-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="game-server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="game-server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="game-server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="game-server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="game-server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="game-server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="connector" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="game-server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="servers" type="462c0819:PsiDirectoryNode" />
-              <item name="connector" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="game-server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="servers" type="462c0819:PsiDirectoryNode" />
               <item name="gate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="game-server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="servers" type="462c0819:PsiDirectoryNode" />
@@ -280,38 +259,32 @@
               <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="game-server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="game-server" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="web-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="web-server" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="web-server" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chatofpomelo-websocket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatofpomelo-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="myfirstgame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myfirstgame" type="462c0819:PsiDirectoryNode" />
               <item name="web-server" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
@@ -320,14 +293,25 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../game-js-slots-server" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\myfirstgame\game-server\app\servers\game" />
+      <recent name="D:\project\myfirstgame\game-server\app\servers\game\remote" />
+      <recent name="D:\project\myfirstgame\game-server\app\servers\game\handler" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -342,6 +326,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="app.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/web-server" />
     <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" application-parameters="env=development" working-dir="$PROJECT_DIR$/game-server">
       <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
         <option name="envVars">
@@ -368,13 +353,15 @@
     <configuration name="chat" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug" singleton="true">
       <node-js-remote-debug />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Node.js Remote Debug.chat" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.app.js (1)" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.app.js (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -392,26 +379,29 @@
       <workItem from="1520319784260" duration="395000" />
       <workItem from="1520320292846" duration="1483000" />
       <workItem from="1520321793389" duration="9348000" />
-      <workItem from="1520472969274" duration="282000" />
+      <workItem from="1520472969274" duration="867000" />
+      <workItem from="1520488558267" duration="68000" />
+      <workItem from="1520489185583" duration="1142000" />
+      <workItem from="1520490419472" duration="8169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12817000" />
+    <option name="totallyTimeSpent" value="22781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37566137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37566137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -431,17 +421,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js</url>
-          <line>22</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js</url>
           <line>39</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app/servers/game/remote/gameRemote.js</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/game-server/app.js</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -451,41 +448,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/chat/handler/chatHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/dictionary.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <marker date="1520327458631" expanded="true" signature="20:154" ph="{...}" />
-            <marker date="1520327458631" expanded="true" signature="42:154" ph="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/config/master.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -522,10 +484,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-          <folding>
-            <marker date="1520327458631" expanded="true" signature="20:154" ph="{...}" />
-            <marker date="1520327458631" expanded="true" signature="42:154" ph="[...]" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -556,10 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding>
-            <marker date="1520327458631" expanded="true" signature="20:154" ph="{...}" />
-            <marker date="1520327458631" expanded="true" signature="42:154" ph="[...]" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -584,10 +540,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="93" lean-forward="false" selection-start-line="25" selection-start-column="93" selection-end-line="25" selection-end-column="93" />
-          <folding>
-            <marker date="1520327458631" expanded="true" signature="20:154" ph="{...}" />
-            <marker date="1520327458631" expanded="true" signature="42:154" ph="[...]" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -612,31 +565,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/public/js/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="159" column="19" lean-forward="false" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game-server/config/log4js.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-798">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/adminServer.json" />
-    <entry file="file://$PROJECT_DIR$/game-server/config/adminUser.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -711,41 +642,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/util/dispatcher.js">
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/chat/filter/abuseFilter.js" />
+    <entry file="file://$PROJECT_DIR$/game-server/config/serverProtos.json" />
+    <entry file="file://$PROJECT_DIR$/web-server/bin/component.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/chat/filter/abuseFilter.js" />
-    <entry file="file://$PROJECT_DIR$/game-server/app/util/routeUtil.js">
+    <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/master.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -758,35 +676,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/servers.json">
+    <entry file="file://$PROJECT_DIR$/game-server/config/clientProtos.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <marker date="1520327458631" expanded="true" signature="20:154" ph="{...}" />
-            <marker date="1520327458631" expanded="true" signature="42:154" ph="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/config/serverProtos.json" />
-    <entry file="file://$PROJECT_DIR$/game-server/config/master.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="171">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-server/bin/component.sh">
+    <entry file="file://$PROJECT_DIR$/game-server/config/adminUser.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -794,26 +692,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game-server/app.js">
+    <entry file="file://$PROJECT_DIR$/game-server/app/util/routeUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="209">
+          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/util/dispatcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/const/const.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/servers/chat/remote/chatRemote.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+        <state relative-caret-position="-646">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/connector/handler/entryHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game-server/app/servers/chat/handler/chatHandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="76">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/adminServer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/config/game.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/game/handler/gameHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/game/remote/gameRemote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-server/public/js/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="235" column="39" lean-forward="true" selection-start-line="235" selection-start-column="39" selection-end-line="235" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game-server/app/servers/gate/handler/gateHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
       </provider>

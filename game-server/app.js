@@ -1,6 +1,7 @@
 var pomelo = require('pomelo');
 var routeUtil = require('./app/util/routeUtil');
 var abu = require("./app/servers/chat/filter/abuseFilter");
+let consts = require("./app/servers/const/const.js");
 /**
  * Init app for client.
  */
@@ -17,6 +18,8 @@ app.configure('production|development', 'connector', function(){
 			useProtobuf : true
 		});
 });
+
+app.consts = consts;
 
 app.configure('production|development', 'gate', function(){
 	app.set('connectorConfig',
@@ -47,3 +50,7 @@ app.start();
 process.on('uncaughtException', function(err) {
 	console.error(' Caught exception: ' + err.stack);
 });
+
+let config = require("./config/game.json");
+
+app.gameconfig = config;
