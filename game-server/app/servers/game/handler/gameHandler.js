@@ -2,7 +2,7 @@
 
 let pomelo = require("pomelo").app;
 let co = require("co");
-let gameremote = require("./game/gameRemote.js");
+let gameremote = require("../../game/remote/gameRemote.js");
 
 module.exports = function(app) {
     return new Handler(app);
@@ -42,11 +42,12 @@ act.spain = function (msg, session, next) {
         return;
     }
 
-    co(function*(){
-        let result = gameremote.spain(uid,linesnum,linevalue);
+    co(function*(){.
+        app.rpc.game.gameRemote.spainspin(session,uid,linesnum,linevalue
+        let result = gameremote.spain();
+        next(null,result);
     }).catch(function (err) {
-        console.log(err.showStack);
+        console.log(err.stack);
         next(null, {code: pomelo.CODE.GAME_EROOR});
     });
-
 }

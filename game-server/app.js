@@ -2,6 +2,7 @@ var pomelo = require('pomelo');
 var routeUtil = require('./app/util/routeUtil');
 var abu = require("./app/servers/chat/filter/abuseFilter");
 let consts = require("./app/servers/const/const.js");
+let testcase = require("./app/servers/game/remote/gameRemote.js");
 /**
  * Init app for client.
  */
@@ -40,17 +41,9 @@ app.configure('production|development', function() {
 	app.filter(pomelo.timeout());
 });
 
-app.configure("production|development","chat",function (){
-    app.filter(abu());
-})
-
 // start app
 app.start();
 
 process.on('uncaughtException', function(err) {
 	console.error(' Caught exception: ' + err.stack);
 });
-
-let config = require("./config/game.json");
-
-app.gameconfig = config;
